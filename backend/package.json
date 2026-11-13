@@ -1,0 +1,25 @@
+{
+  "name": "workflow-decision-platform-backend",
+  "version": "1.0.0",
+  "description": "Configurable Workflow Decision Platform Backend",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node testRunner.js",
+    "test:unit": "node --test tests/validationEngine.test.js tests/rulesEngine.test.js tests/stateMachine.test.js tests/externalService.test.js",
+    "seed": "node seedRunner.js",
+    "demo": "node demo.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.8.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  }
+}
